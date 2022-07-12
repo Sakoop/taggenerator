@@ -1,6 +1,27 @@
+:root {
+    --font-color: rgb(42, 42, 42);
+    --input-font-color: rgb(42, 42, 42);
+    --input-color: #fff;
+    --bg-color: #fff;
+    --title-color: #900;
+    --btn-color: #900;
+    --btn-font: #fff;
+    --hr-color: #8a8a8a;
+}
+[data-theme="dark"] {
+    --font-color: #fff;
+    --input-font-color: #fff;
+    --input-color: rgb(42, 42, 42);
+    --bg-color: rgb(42, 42, 42);
+    --title-color: #fff;
+    --btn-color: #900;
+    --btn-font: #fff;
+    --hr-color: #fff;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:rgb(42, 42, 42);
+    background-color: var(--bg-color);
+    color:  var(--font-color);
 }
 main {
     padding: 5% 0;
@@ -12,21 +33,22 @@ input, button {
 input {
     padding:12px;
     width: 50%;
-    border: white;
+    border: var(--bg-color);
     cursor:pointer;
 
     text-align: center;
     font-size: larger;
-    color:rgb(42, 42, 42)
+    background-color: var(--input-color);
+    color: var(--input-font-color);
 }
 button {
     padding: 12px 28px;
     cursor:pointer;
     margin-top: 12px;
 
-    background-color: #900;
-    border: 2px solid #900;
-    color: white;
+    background-color: var(--btn-color);
+    border: 2px solid var(--btn-color);
+    color: var(--btn-font);
     font-size: larger;
 }
 article {
@@ -37,7 +59,7 @@ article {
     font-size: large;
 }
 hr {
-    border-color: #8a8a8a;
+    border-color: var(--hr-color);
     border-style: solid;
 }
 .fancy {
@@ -45,31 +67,86 @@ hr {
 }
 .title {
     text-align: center;
-    color: #900;
+    color: var(--title-color);
     padding: 36px 0 0 0;
 }
-.nav {
+.footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
 .about-title {
     text-align: left;
-    color: #900;
+    color: var(--title-color);
     padding: 36px 0 4px;
 }
 .formatted-link {
     text-decoration: none;
     font-size: large;
-    color: rgb(42, 42, 42);
+    color: var(--font-color);
 }
 .ao3-tag-style {
-    padding: 16px;
+    padding: 16px 4px 0 4px;
     margin-top: 12px;
 
     display: block;
     text-align: center;
     font-size: x-large;
-    text-decoration: underline;
+    text-decoration-line: underline;
 }
 
+/* for theme toggle switch */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  
+    
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 18px;
+    position: relative;
+    width: 30px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: rgb(42, 42, 42);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 10px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 10px;
+  }
+  
+  input:checked + .slider {
+    background-color: #900;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(12px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
