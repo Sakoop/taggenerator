@@ -70,10 +70,10 @@ hr {
     color: var(--title-color);
     padding: 36px 0 0 0;
 }
-.footer {
+.right {
     position: fixed;
-    bottom: 10px;
     right: 10px;
+    top: 10px;
 }
 .about-title {
     text-align: left;
