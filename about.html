@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="light-theme.css">
 </head>
 <body>
+    <nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+          </label>
+        </div>
+    </nav>
+
     <article class="fancy">
         <div>
             <h2 class="about-title">About</h2>
@@ -18,5 +27,32 @@
         <p>One thousand out of tens of thousands. If you think one of your favs isn't in the list, <a href="https://twitter.com/dxvisive" class="formatted-link" style="text-decoration:underline;" target="_blank">dm it to me</a> and I'll add it if it's not.</p>
         <p>My original intent here was for creative purposes, like a prompt generater. You have three random tags, how can you create a story out of them? But a lot of the tags are like, cum-eater! Nothing wrong with that, but do with it what you will.</p>
     </article>
+
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark'); //add this
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light'); //add this
+            }    
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+    </script>
 </body>
 </html>
