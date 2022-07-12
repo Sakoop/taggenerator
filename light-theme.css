@@ -93,7 +93,8 @@ hr {
     text-align: center;
     font-size: x-large;
     font-weight: 400;
-    text-decoration-line: underline;
+    text-decoration:underline;
+    text-decoration-style: dotted;
 }
 
 /* for theme toggle */
