@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(42, 42, 42);
+}
+main {
+    padding: 5% 0;
+}
+input, button {
+    display: block;
+    margin: 0 auto;
+}
+input {
+    padding:12px;
+    width: 50%;
+    border: white;
+    cursor:pointer;
+
+    text-align: center;
+    font-size: larger;
+    color:rgb(42, 42, 42)
+}
+button {
+    padding: 12px 28px;
+    cursor:pointer;
+    margin-top: 12px;
+
+    background-color: #900;
+    border: 2px solid #900;
+    color: white;
+    font-size: larger;
+}
+article {
+    margin: 0 auto;
+    padding: 12px;
+    width: 70%;
+
+    font-size: large;
+}
+hr {
+    border-color: #8a8a8a;
+    border-style: solid;
+}
+.fancy {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title {
+    text-align: center;
+    color: #900;
+    padding: 36px 0 0 0;
+}
+.nav {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.about-title {
+    text-align: left;
+    color: #900;
+    padding: 36px 0 4px;
+}
+.formatted-link {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(42, 42, 42);
+}
+.ao3-tag-style {
+    padding: 16px;
+    margin-top: 12px;
+
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: dotted underline;
+}
+
