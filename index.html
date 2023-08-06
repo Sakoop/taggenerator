@@ -1,243 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tag Generator</title>
-    <link rel="icon" type="image/png" href="reading-icon.png">
-    <link rel="stylesheet" href="light-theme.css">
-</head>
-<body>
-    <nav>
-        <div>
-            <label class="theme-switch theme-icon" for="checkbox">
-                <input type="checkbox" id="checkbox"/>
-                <div></div>
-          </label>
+    <link rel="icon" type="image/png" href="reading-icon.png" />
+    <link rel="stylesheet" href="skin.css" />
+  </head>
+
+  <body class="logged-out">
+    <div id="outer" class="wrapper">
+      <!-- BEGIN header -->
+
+      <div id="header" class="region">
+        <h1 class="heading">
+          <a href="/"
+            ><span>Archive of Our Own</span><sup>tags</sup>
+
+            <img
+              alt="Archive of Our Own"
+              class="logo"
+              src="data:image/webp;base64,UklGRgAEAABXRUJQVlA4TPMDAAAvPEAKEC+noG0jJ/xZ34+OQzCXQSBpi7f9YpOE5sA7AIU+lEjeT5mUQ0AsCk+QmINYgGAMRFkC0isQtAPZCYKibWuHJOmWbbdt27Zt2+6qatu2bdu2bSvPk0TEH5EzLxDR/wlILZokf4eV7Dp6XO9KCfKy0fLVHXP5p8D4Qy9+//1wem55L3K3nnPiwcE+SZ6FjnqK4+fFOd1Jim6z/c+zacW8SVwPPN42b86Gq8DFYl5IqrqF3zOLeRC6Gd6MyyNJ8T1uwpW83kg1TvJtTLqrIfCoihxzH4QNAUYtuzkppOdb7nRzUeAt76vJMPUyvloGhbc/6WUgFdoI28oYDYdsGTf5x6YAhyFvthSVeUDfD7waHOQUsIP3RczCLvA0xSb/jt/D5L7KBdhczCHxDnvlci5/qlqavHhTX14mr4UHrezyvGSlmwnQQtIIrhWXtzFTwJcZbsn5nDVuMqGJAmZzJFne5hii7j9hR4akyItcCHexjq8FNI/9cfK47nap9Ue4VEHScv41MEt7xkWN5FiyvJ6wXVL9F/CihdQGdpuNhcGduJVTnm9ZLUnVH8K37oo4A2NMmn3levdPPyrL88CzYy2q9BgYoQo/YFK8XWC3j/yedZ1h8j7v0+Y2qvgCmKzuPrg4oGhqcsG2+4DpmzkQ6oea78rZqfprYKZavwY+PLj3Bvg1aPCfb6XkxwGfczuo6Tdgtoouf4/t3501cz5nqvy59k6okzr9BRZIpfvP37d/0YBK0ibuxvoj8MpamQ4CWBwgx8SesCgm3A9l/g01UhbAtIwSdfsuPHDuxuNf8PrWue3Dq0R41I+GZsr8Azz6jNvfJ9t7s+d7hlnBcd/xeowXaV/PBxgE1lv6EsMHR67C7XatOvSctOMJUN+DvkySY1Sb3Rj6llRPDd8GmbLNt8bHAneBJ6ltF9XxLPa+uz5gV4iq/OVXdTulv2WLu4pcCrWEdjiL/b2ZtVOzAPYGT4RTwQ7Fv7DE3TJGSlLzQ9h+XdcuVVLQQoDFp2Cm7HPthMauKv78XliqtMGH9caksrKP2Ih9K0ueTivuwfRAVzuYrfTMj1hP9U+VYfxJm19lJKVeBZ6MCpTbLjwp0PQq1qOdwmVe+L7lRpykjOfAArnO9YSNS7EebxEi1w1+Aytkrbj7Bxwq7yJgHf8+AZxsFSYvBwK9baTKmS/40NhsGLbXusfK46F3D6c5SPmm8DSnSYNvlmfjMuR9SqSMZzLaIMd94M/aYvJvodYm1VnlFLIYONdE/k4/NjvUaTnNnFLf8mNcnPxf+My5zimWvHPZFuwU3HlGHf0nEyZdubN7yfJjv9iZpv9jeqcVx69e2to5VLYA"
+          /></a>
+        </h1>
+
+        <h3 class="landmark heading">Site Navigation</h3>
+        <ul class="primary navigation actions" role="navigation">
+          <li class="dropdown">
+            <a href="">Fandoms</a>
+            <ul class="menu" role="menu">
+              <li><a href="">All Fandoms</a></li>
+              <li id="medium_5">
+                <a href="">Anime &amp; Manga</a>
+              </li>
+              <li id="medium_3">
+                <a href="">Books &amp; Literature</a>
+              </li>
+              <li id="medium_4">
+                <a href="">Cartoons &amp; Comics &amp; Graphic Novels</a>
+              </li>
+              <li id="medium_7">
+                <a href="">Celebrities &amp; Real People</a>
+              </li>
+              <li id="medium_2"><a href="">Movies</a></li>
+              <li id="medium_6">
+                <a href="">Music &amp; Bands</a>
+              </li>
+              <li id="medium_8">
+                <a href="">Other Media</a>
+              </li>
+              <li id="medium_30198">
+                <a href="">Theater</a>
+              </li>
+              <li id="medium_1">
+                <a href="">TV Shows</a>
+              </li>
+              <li id="medium_476">
+                <a href="">Video Games</a>
+              </li>
+              <li id="medium_9971">
+                <a href="">Uncategorized Fandoms</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="">Browse</a>
+            <ul class="menu" role="menu">
+              <li><a href="">Works</a></li>
+              <li><a href="">Bookmarks</a></li>
+              <li><a href="">Tags</a></li>
+              <li><a href="">Collections</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="">Search</a>
+            <ul class="menu" role="menu">
+              <li><a href="">Works</a></li>
+              <li><a href="">Bookmarks</a></li>
+              <li><a href="">Tags</a></li>
+              <li><a href="">People</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="">About</a>
+            <ul class="menu" role="menu">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Wrangling Guidelines</a></li>
+              <li><a href="">Donate or Volunteer</a></li>
+            </ul>
+          </li>
+          <li class="search">
+            <form
+              class="search"
+              id="search"
+              action=""
+              accept-charset="UTF-8"
+              method="get"
+            >
+              <fieldset>
+                <legend>Search Works</legend>
+                <p>
+                  <label class="landmark" for="site_search">Work Search:</label>
+                  <input
+                    class="text"
+                    id="site_search"
+                    aria-describedby="site_search_tooltip"
+                    type="text"
+                    name="work_search[query]"
+                  />
+                  <span class="tip" role="tooltip" id="site_search_tooltip"
+                    >tip: &quot;sherlock (tv)&quot; m/m NOT &quot;sherlock
+                    holmes/john watson&quot;</span
+                  >
+                  <span class="submit actions"
+                    ><input type="submit" value="Search" class="button"
+                  /></span>
+                </p>
+              </fieldset>
+            </form>
+          </li>
+        </ul>
+
+        <div class="clear"></div>
+      </div>
+
+      <!-- END header -->
+
+      <div id="inner" class="wrapper">
+        <!-- BEGIN sidebar -->
+        <!-- END sidebar -->
+
+        <!-- BEGIN main -->
+        <div id="main" class="chapters-show region" role="main">
+          <div class="flash"></div>
+          <!-- BEGIN work -->
+          <div class="work">
+            <p class="landmark"><a name="top">&nbsp;</a></p>
+            <!-- BEGIN navigation -->
+            <h3 class="landmark heading">Actions</h3>
+            <ul class="work navigation actions" role="menu">
+              <li class="share">
+                <!-- ADD SOMETHING THAT GIVES LINK TO SHARE -->
+                <a
+                  class="share_proj"
+                  title="Share"
+                  aria-controls="#modal"
+                  href=""
+                  onclick="share()"
+                  >Share</a
+                >
+              </li>
+            </ul>
+            <!-- END navigation -->
+
+            <h3 class="landmark heading">Work Header</h3>
+
+            <div class="wrapper">
+              <dl class="work meta group">
+                <dt class="rating tags">Rating:</dt>
+
+                <dd class="rating tags">
+                  <ul class="commas">
+                    <li>
+                      <a class="tag" href="">(Possibly) Explicit</a>
+                    </li>
+                  </ul>
+                </dd>
+                <dt class="warning tags">
+                  <a href="">Archive Warning</a>:
+                </dt>
+
+                <dd class="warning tags">
+                  <ul class="commas">
+                    <li>
+                      <a
+                        class="tag"
+                        href=""
+                        >Creator Chose Not To Use Archive Warnings</a
+                      >
+                    </li>
+                  </ul>
+                </dd>
+                <dt class="category tags">Category:</dt>
+
+                <dd class="category tags">
+                  <ul class="commas">
+                    <li><a class="tag" href="">Any</a></li>
+                  </ul>
+                </dd>
+                <dt class="fandom tags">Fandom:</dt>
+
+                <dd class="fandom tags">
+                  <ul class="commas">
+                    <li>
+                      <a class="tag" href=""
+                        >Archive of Our Own</a
+                      >
+                    </li>
+                  </ul>
+                </dd>
+                <dt class="relationship tags">Relationship:</dt>
+
+                <dd class="relationship tags">
+                  <ul class="commas">
+                    <li>
+                      <a
+                        class="tag"
+                        href=""
+                        >You/Me</a
+                      >
+                    </li>
+                  </ul>
+                </dd>
+                <dt class="character tags">Characters:</dt>
+
+                <dd class="character tags">
+                  <ul class="commas">
+                    <li>
+                      <a
+                        class="tag"
+                        href=""
+                        >Creator</a
+                      >
+                    </li>
+                    <li>
+                      <a class="tag" href=""
+                        >You</a
+                      >
+                    </li>
+                  </ul>
+                </dd>
+                <dt class="freeform tags">Additional Tags:</dt>
+
+                <dd class="freeform tags">
+                  <ul class="commas">
+                    <li><a class="tag ao3-tag-style" href="" style = "font-weight:bold;">TAGS WILL SHOW HERE....</a></li>
+                  </ul>
+                </dd>
+
+                <dt class="language">Language:</dt>
+                <dd class="language" lang="en">English</dd>
+
+                <dt class="stats">Stats:</dt>
+                <dd class="stats">
+                  <!-- end of cache -->
+
+                  <dl class="stats">
+                    <dt class="published">Published:</dt>
+                    <dd class="published">2022-07-12</dd>
+                    <dt class="status">Updated:</dt>
+                    <dd class="status">2023-08-05</dd>
+                    <dt class="words">Words:</dt>
+                    <!-- put number of tags here??? -->
+                    <dd class="words">0</dd>
+                    <dt class="chapters">Chapters:</dt>
+                    <dd class="chapters">1/1</dd>
+                    <dt class="kudos">Kudos:</dt>
+                    <dd class="kudos">100,000</dd>
+                    <dt class="hits">Hits:</dt>
+                    <dd class="hits">100,000</dd>
+                  </dl>
+                </dd>
+              </dl>
+            </div>
+
+            <!-- BEGIN section where work skin applies -->
+            <div id="workskin">
+              <div class="preface group">
+                <h2 class="title heading">Tag Generator</h2>
+                <h3 class="byline heading">
+                  <a rel="author" href="https://github.com/Sakoop/taggenerator"
+                    >sakoop</a
+                  >
+                </h3>
+
+                <div class="summary module">
+                  <h3 class="heading">Summary:</h3>
+                  <blockquote class="userstuff">
+                    <p>Randomly generate a number of popular AO3 tags! The tags will show up above in 'Additional Tags.'</p>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div id="chapters">
+                <!-- This partial requires local variable 'chapter' -->
+                <div class="chapter" id="chapter-1">
+                  <!-- chapter management -->
+
+                  <div class="chapter preface group">
+                    <h3 class="title">
+                      <a href="">Get Generating!</a
+                      >
+                    </h3>
+
+                    <input type="number" name="num_of_tags" id="num_tags" required="required" step="1" min="1" max="50" placeholder="Enter a Number">
+                    <button onclick="generate()" id="gen-btn">Generate</button>
+
+                    <!-- only display byline if different from the main byline -->
+                  </div>
+
+                  <!--main content-->
+                  <div class="userstuff module" role="article"></div>
+                  <!--/main-->
+                </div>
+
+                <!-- end of cache -->
+              </div>
+            </div>
+            <!-- END work skin -->
+          </div>
+          <!-- END work -->
+
+          <!-- BEGIN comment section -->
+          <!-- Gets embedded anywhere we need to list comments on a top-level commentable. We need the local variable "commentable" here. -->
+          <div id="feedback" class="feedback">
+            <h3 class="landmark heading">Actions</h3>
+
+            <ul class="actions" role="navigation">
+              <li><a href="#main">&#8593; Top</a></li>
+
+              <li>
+                  <input
+                    type="submit"
+                    name="commit"
+                    value="Kudos ♥"
+                    id="kudo_submit"
+                    onclick="gratitude()"
+                  />
+                </form>
+              </li>
+            </ul>
+
+            <div id="kudos_message"></div>
+
+            <h3 class="landmark heading">Kudos</h3>
+            <div id="kudos">
+              <p class="kudos">
+                <a href="" class="user_liked">Someone</a>
+                left kudos on this project! (not really)
+              </p>
+            </div>
+
+            <h3 class="landmark heading"><a id="comments">Comments</a></h3>
+          <!-- END comments -->
+
+          <!-- END comment section -->
+
+          <div class="clear"><!--presentational--></div>
         </div>
-        <a href="about.html" class="formatted-link right">ABOUT</a>
-    </nav>
+        <!-- END main -->
+      </div>
+      <!-- BEGIN footer -->
+      <div id="footer" role="contentinfo" class="region">
+        <h3 class="landmark heading">Footer</h3>
+        <ul class="navigation actions" role="navigation">
+          <li class="module group">
+            <h4 class="heading">Thanks</h4>
+          </li>
+          <li class="module group">
+            <h4 class="heading">For</h4>
+          </li>
+          <li class="module group">
+            <h4 class="heading">Using</h4>
+          </li>
+          <li class="module group">
+            <h4 class="heading">This!</h4>
+          </li>
+        </ul>
+      </div>
+      <!-- END footer -->
+    </div>
 
-    <main>
-
-        <h1 class="title">Tag Generator</h1>
-        <input type="number" name="num_of_tags" id="num_tags" required="required" step="1" min="1" max="50" placeholder="Enter a Number">
-        <button onclick="generate()" id="gen-btn">Generate</button>
-
-        <h3 class="ao3-tag-style"> </h3>
-
-    </main>
-
+    <!-- SCRIPT -->
     <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); //add this
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light'); //add this
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-        
-        const tags = ["Fluff", "Angst", "Smut", "Hurt/Comfort", "Romance", "Established Relationship", "Alternate Universe",
-        "One Shot", "Humor", "Cute", "Anal Sex", "Alternate Universe - Modern Setting", "Slow Burn", "Oral Sex",
-        "Friends to Lovers", "First Kiss", "Pining", "First Time", "Crossover", "Canon Compliant", "Kissing", "Short",
-        "Domestic Fluff", "Blow Jobs", "Light Angst", "Post-Canon", "Alternate Universe - College/University", "Family",
-        "PWP", "Explicit Sexual Content", "Violence", "Time Travel", "Masturbation", "Dirty Talk", "Sex", "Mpreg",
-        "Rough Sex", "Character Study", "Character Death", "Sweet", "Depression",
-        "Falling In Love", "Alternate Universe - High School", "NSFW", "Polyamory", "Christmas", "Rimming", "Soulmates",
-        "Porn", "Blood", "Sexual Content", "Magic", "Sad", "BDSM", "Jealousy", "Developing Relationship", "Vaginal Sex",
-        "Funny", "Dom/sub", "Minor Character Death", "Slice of Life", "Dubious Consent", "Misunderstandings",
-        "Spanking", "Future Fic", "Kidnapping", "Comfort", "Unrequited Love", "Nightmares", "Flirting", "Kid Fic",
-        "Pre-Canon", "Long", "Fix-It", "Pre-Slash", "Pre-Relationship", "Torture", "Teasing", "Suicidal Thoughts",
-        "Explicit Language", "Alcohol", "Anxiety", "Crying", "Bondage", "Action/Adventure",
-        "Alternate Universe - Fantasy", "Heavy Angst", "Daddy Kink", "Modern AU", "Friendship/Love", "Cunnilingus",
-        "First Meetings", "Slow Build", "Domestic", "Age Difference", "Porn With Plot", "Voyeurism", "Murder",
-        "Coming Out", "Incest", "Introspection", "Self-Harm", "Sex Toys", "Pregnancy", "Secret Relationship",
-        "Semi-Public Sex", "Drinking", "Christmas Fluff", "Gay", "Vampires", "Sharing a Bed", "Sibling Incest",
-        "Threesome - M/M/M", "Frottage", "Poetry", "Fake/Pretend Relationship", "Abuse", "Flashbacks",
-        "Marriage Proposal", "POV First Person", "Blood and Gore", "Biting", "Hurt", "Fantasy", "Horror",
-        "Multiple Orgasms", "Found Family", "Mystery", "Making Out", "Boys In Love", "Threesome", "Homophobia",
-        "Light Bondage", "Banter", "Reincarnation", "Possessive Behavior", "Drug Use", "Trauma", "Loss of Virginity",
-        "Past Relationship(s)", "Not Canon Compliant", "Bullying", "Confessions", "Friends With Benefits",
-        "Best Friends", "High School", "Unresolved Sexual Tension", "Exhibitionism", "Internalized Homophobia",
-        "Public Sex", "Cheating", "Past Abuse", "Arranged Marriage", "Humiliation", "Fluffy", "Aftercare",
-        "Threesome - F/M/M", "Crossdressing", "Choking", "Amnesia", "Dancing", "Alcohol Abuse/Alcoholism",
-        "Minor Violence", "Overstimulation", "War", "Recovery", "Trans Character", "Healing", "Memory Loss",
-        "Supernatural Elements", "Break Up", "Underage Drinking", "Femslash", "Werewolves", "Ghosts", "Chaptered",
-        "True Love", "Guilt", "Light BDSM", "Self-Esteem Issues", "Texting", "Barebacking", "Cuddling", "Reunions",
-        "Family Drama", "Demons", "Father-Son Relationship", "Tragedy", "Unhealthy Relationships",
-        "Recreational Drug Use", "College AU", "Pain", "Canon Universe", "Gore", "Weddings", "Memories", "POV Outsider",
-        "Alternate Universe - Vampire", "POV Alternating", "Shower Sex", "Sad Ending", "Begging", "Secrets",
-        "Manipulation", "Insecurity", "Smoking", "Size Kink", "Double Penetration", "Post-War", "Riding", "Nipple Play",
-        "Alternate Universe - Canon", "Bonding", "PTSD", "Alternate Universe - Historical", "Betrayal",
-        "Temporary Character Death", "Hopeful Ending", "Infidelity", "Adoption", "One-Sided Attraction", "Heartbreak",
-        "Underage Sex", "Drugs", "Fingering", "Holidays", "Roommates", "Bittersweet", "Mutual Masturbation",
-        "Unplanned Pregnancy", "Revenge", "Protectiveness", "Mind Control", "Awkwardness", "Music", "Arguing",
-        "Asexual Character", "Drunk Sex", "Headcanon", "Prostitution", "Worldbuilding", "Hair-pulling", "Dreams",
-        "Teacher-Student Relationship", "POV Third Person", "Unhealthy Coping Mechanisms", "Tattoos",
-        "Past Character Death", "Dragons", "Secret Identity", "Scars", "Vomiting", "Slavery", "Tentacles", "Politics",
-        "Lingerie", "First Love", "Brothers", "Non-Graphic Violence", "Blowjobs", "Alternate Universe - Magic",
-        "Genderswap", "Genderbending", "Fights", "Alternate Universe - Gender Changes", "Dysfunctional Family",
-        "Cuddles", "Minor Injuries", "Declarations Of Love", "Mild Gore", "Phone Sex", "Fingerfucking", "Love/Hate",
-        "Mental Instability", "Loneliness", "Lesbian Sex", "Witches", "Families of Choice", "Parenthood",
-        "Teen Romance", "Soul Bond", "Anal", "Children", "Science Fiction", "Love at First Sight", "Deepthroating",
-        "Non-Consensual Drug Use", "Blindfolds", "Collars", "Punishment", "Vignette", "Forbidden Love", "Winter",
-        "Babies", "Post-Break Up", "Femdom", "Fear", "Marking", "Unreliable Narrator", "Dating", "Accidental Voyeurism",
-        "Anger", "Cooking", "Breathplay", "Sexual Fantasy", "Siblings", "Alternate Universe - Hogwarts",
-        "Long-Distance Relationship", "Cannibalism", "Growing Up", "Therapy", "Coming of Age", "Stalking",
-        "High School AU", "Watersports", "Bathing/Washing", "Loss", "Car Sex", "Royalty", "Handcuffs", "Orgasm Denial",
-        "Father-Daughter Relationship", "Letters", "Anal Play", "Pegging", "Roleplay", "Trust Issues",
-        "Late Night Conversations", "Insomnia", "Butt Plugs", "Regret", "Guns", "Comfort/Angst", "Power Dynamics",
-        "Massage", "Hate Sex", "Switching", "Stockholm Syndrome", "Non-Linear Narrative", "Alternate Canon",
-        "Redemption", "Time Skips", "Historical", "Magical Realism", "Wall Sex", "Bisexuality", "Verbal Humiliation",
-        "Sex Pollen", "Forced Orgasm", "One Night Stands", "Nudity", "Outdoor Sex", "Rescue", "Restraints",
-        "Gay Male Character", "Rope Bondage", "Drug Addiction", "Gags", "Alternate Universe - Superheroes/Superpowers",
-        "Baking", "Party", "Gangbang", "Character Development", "Rain", "Angels", "New Year's Eve", "Holding Hands",
-        "Resolved Sexual Tension", "Knifeplay", "Caretaking", "Transformation", "Apocalypse", "Somnophilia",
-        "Seduction", "Self-Doubt", "Child Neglect", "Embarrassment", "Bromance", "Wings", "Office Sex", "Tears",
-        "Post-Apocalypse", "Possession", "Telepathy", "Reconciliation", "Awkward Conversations", "Murder Mystery",
-        "Mild Angst", "Mythical Beings & Creatures", "Dildos", "Facials", "Mistletoe", "Shapeshifting", "Sexual Abuse",
-        "Bickering", "Masochism", "Alternate Universe - Dark", "Bisexual Male Character", "Sadism", "Summer", "Zombies",
-        "Wedding", "Rape Recovery", "Morning Sex", "Bloodplay", "Time Loop", "Canon Related", "Twincest", "Blackmail",
-        "Edging", "Alternate Universe - Fairy Tale", "Engagement", "Bathroom Sex", "Prison", "School", "Some angst",
-        "Tickling", "Power Play", "Kink Negotiation", "Intercrural Sex", "Submission", "Romantic Friendship",
-        "Vacation", "Denial", "Clothed Sex", "Religion", "Age Play", "Brainwashing", "Angry Sex", "Morning After",
-        "Immortality", "Twins", "Pirates", "Animal Transformation", "Threesome - F/F/M", "Living Together", "Intimacy",
-        "Alternate Reality", "Master/Slave", "Awkward Sexual Situations", "Domestic Bliss", "Tentacle Sex", "Drowning",
-        "Camping", "Sexual Slavery", "Divorce", "World War II", "Orgasm Control", "Childbirth", "Identity Issues",
-        "Touching", "Miscarriage", "Unsafe Sex", "Chatting & Messaging", "Hockey", "handjobs", "Zombie Apocalypse",
-        "Enthusiastic Consent", "Afterlife", "Aphrodisiacs", "Resurrection", "Unhappy Ending", "Stargazing",
-        "Alternate Universe - Science Fiction", "Non-Explicit Sex", "One-Sided Relationship", "Plot What Plot",
-        "Whipping", "Verbal Abuse", "Illnesses", "Comeplay", "Rivalry", "Drunken Shenanigans", "Drug Abuse",
-        "Original Fiction", "Aftermath of Violence", "Poly", "Alternate Universe - Office", "Power Imbalance",
-        "Clubbing", "69 (Sex Position)", "Orgy", "Daddy Issues", "Insanity", "Truth or Dare", "Apologies",
-        "Alternate Universe - Space", "Movie Night", "Sleeping Together", "Reunion", "First Date", "Role Reversal",
-        "Pregnant Sex", "Wet Dream", "Fisting", "Face Slapping", "Mafia AU", "Sappy", "Bodyswap", "Get Together",
-        "Casual Sex", "Brother-Sister Relationships", "Medical Procedures", "Superheroes", "Ambiguous Relationships",
-        "Undercover", "Cock Rings", "Matchmaking", "Foreplay", "Asphyxiation", "Edgeplay", "Group Sex", "Light-Hearted",
-        "Serial Killers", "Sleep Deprivation", "Unprotected Sex", "Human Experimentation",
-        "Alternate Universe - Rock Band", "Forced Marriage", "No Dialogue", "Social Anxiety", "Young Love", "Dream Sex",
-        "Desk Sex", "Consent Issues", "Thriller", "Babysitting", "Oblivious", "Topping from the Bottom", "Reminiscing",
-        "Mental Illness", "Mistaken Identity", "Mind Games", "Making Up", "Piercings", "Military", "Coma",
-        "Diary/Journal", "Police", "Fake Marriage", "Fantasizing", "Baby", "Marijuana", "Cultural Differences",
-        "Origin Story", "Sparring", "Love Bites", "Codependency", "Longing", "Sensory Deprivation", "Licking",
-        "Bad Parenting", "Dom/sub Play", "5 Times", "Fuck Or Die", "Closeted Character", "Shopping", "Photography",
-        "Painplay", "Addiction", "Comfort Sex", "Dysfunctional Relationships", "Courtship", "Self-Sacrifice",
-        "Foot Fetish", "Porn Without Plot", "Alternate Universe - Angels & Demons", "Abandonment", "Public Humiliation",
-        "Blind Date", "Sex Work", "Sports", "Growing Up Together", "Voice Kink", "Drugged Sex", "Teen Pregnancy",
-        "Sacrifice", "Exhaustion", "Requited Love", "Hospital", "Cock Worship", "Object Insertion", "Detectives",
-        "Psychic Abilities", "Vampire AU", "Hotel Sex", "Wedding Night", "Public Display of Affection",
-        "Amputation", "Heartache", "Safewords", "Robots", "injuries", "Huddling For Warmth", "Showers", "Dystopia",
-        "Lactation Kink", "Stripping", "Competition", "Bad Decisions", "Snowed In", "Adultery", "Swimming", "Crime",
-        "Pet Play", "Beaches", "London", "Vampire Sex", "Mermaids", "Marriage of Convenience", "First Times",
-        "Fatherhood", "Cigarettes", "Disturbing Themes", "Sibling Rivalry", "Dirty Thoughts", "Threesome - F/F/F",
-        "Snowball Fight", "Field Trip", "Fake Relationship", "Forced Pregnancy", "Rejection", "Kitchen Sex",
-        "Creature Fic", "Exes", "Alternate Universe - Gangsters", "Sexual Harassment", "Hypnotism", "Drinking Games",
-        "Potions", "Manhandling", "Paranormal", "Explosions", "Mindfuck", "Rituals", "Couch Sex", "Possessive Sex",
-        "non-con", "Heaven", "5+1", "Villains", "Breakup", "Multiple Partners", "Road Trip", "Artificial Intelligence",
-        "Pillow Talk", "Muteness", "New Years", "Medical Kink", "Quarantine", "Interrogation", "Public Nudity",
-        "Moral Ambiguity", "Temperature Play", "Late at Night", "Felching", "Non-Consensual Spanking",
-        "Multiple Pairings", "Sleepy Sex", "Non-Consensual", "Grooming", "Crush", "Flogging",
-        "Alternate Universe - Regency", "Older Woman/Younger Man", "Mental Anguish", "Condoms", "Strip Tease",
-        "Band Fic", "Bath Sex", "Accidental Marriage", "Yearning", "Greek Mythology - ", "Master/Servant",
-        "Objectification", "Personal Growth", "Prophecy", "Fate", "Secret Admirer", "Sexual Experimentation",
-        "Gambling", "Cuckolding", "Picnics", "Food Sex", "Love Potion/Spell", "Cousin Incest", "Porn Battle",
-        "Hair Pulling", "Mommy Kink", "Bad BDSM Etiquette", "Necromancy", "Deception", "dub-con", "Forced Bonding",
-        "Intersex", "Orphans", "Espionage", "Heroes", "Parents", "Forced Prostitution", "Football", "Sexism",
-        "Self-cest", "Piano", "Fuckbuddies", "Chains", "Coercion", "Alternate Universe - Western", "Partnership",
-        "Leashes", "Roughness", "Kidnapped", "Strangers", "Motorcycles", "Non-Penetrative Sex", "Baseball",
-        "Love Triangle", "Friends to Enemies", "Tearjerker", "Sneaking Around", "Sister-Sister Relationship", "Fairies",
-        "Enemies", "Experimental Style", "Ass to Mouth", "Demon", "Desire", "Frustration", "Caning",
-        "Alternate Universe - Criminals", "True Love's Kiss", "Alternate Universe - Boarding School", "Curtain Fic",
-        "Open Ending", "Sharing Body Heat", "Marathon Sex", "Teaching", "Succubi & Incubi", "Victorian", "Rape Fantasy",
-        "Violent Sex", "Heist", "Porn Watching", "Alternate Universe - Shapeshifters", "Table Sex", "Hand Job",
-        "Homecoming", "Moral Dilemmas", "Boarding School", "Kneeling", "Hickeys", "World War I", "Lapdance", "Affairs",
-        "Fucking Machines", "Emotional Abuse", "Secret Marriage", "Premature Ejaculation", "Attempted Suicide",
-        "Dark Fantasy", "Molestation", "Abuse of Authority", "Sweat", "Clothing Kink", "Theatre", "Library",
-        "Spin the Bottle", "Gaming", "Napping", "Glory Hole", "One Night Stand", "Snowballing", "Skinny Dipping",
-        "Wrestling", "Theft", "Accidental Bonding", "Beach Sex", "Trains", "Drug Dealing", "Partner Betrayal",
-        "Traditions", "Stranded", "Anonymous Sex", "Undressing", "Psychic Bond", "Students", "Opposites Attract",
-        "Boys in Skirts", "Cock Tease", "Control", "Truth Serum", "Regency", "Breaking and Entering", "Yakuza",
-        "Bathtubs", "Pain Kink", "Delusions", "face fucking", "Ice Play", "Sexual Inexperience", "Age Swap", "Vikings",
-        "Boys Being Boys", "Workplace Sex", "Bottoming from the Top", "Alternate Universe - Restaurant",
-        "Eavesdropping", "Modeling", "Bedroom Sex", "Uniform Kink", "Dirty Dancing", "Virtual Reality", "Closet Sex",
-        "Knights", "Hypnosis", "Infertility", "Space Pirates", "Dress Up", "1980s", "1920s", "Prison Sex",
-        "Alternate Universe - Politics", "Sensation Play", "Spies", "Baby Fic", "Pheromones", "Hiking", "Gothic",
-        "Worship", "Unrequited Lust", "Obedience", "Acting", "Ownership", "Christianity", "1960s", "1970s", "Olympics",
-        "Summer Camp", "Library Sex", "Snuggling", "Yoga", "Wooing", "Harassment", "Lovers", "Sex Club",
-        "Play Fighting", "Alternate Universe - Small Town", "Locker Room", "Fondling", "Self-Loathing", "Legends",
-        "Prayer", "Revenge Sex", "1930s", "Priest Kink", "Watching Someone Sleep", "Nipple Torture", "Tarot",
-        "Tsunderes", "Humiliation kink", "Bitterness", "Medieval", "1950s", "Martial Arts", "Mind Reading",
-        "Domination", "Stalker", "Church Sex", "Bad Sex", "Fight Sex", "Sexual Confusion", "Sleepwalking", "Tattoos",
-        "Pool Sex", "Board Games", "Quiet Sex", "Candles", "Mile High Club", "Non-Sexual Kink", "Elevator Sex",
-        "Biblical References", "Object Penetration", "Nobility", "Power Outage", "Aliens Made Them Do It", "Porn Video",
-        "Phone Calls", "Cockblocking", "Obliviousness", "Priests", "Telepathic Sex", "Desert", "Street Racing",
-        "Goddesses", "Dare", "Facial", "Regency Romance", "Fear Play", "Plague", "Wounds", "Underworld", "Fame",
-        "Poker", "Surfing", "April Fools' Day", "Catholicism", "Service Submission", "Underwear", "Fever Dreams",
-        "Centaurs", "Sailing", "Classroom Sex", "Atlantis", "Cohabitation", "Judaism", "selective mutism", "Body Paint",
-        "body image issues", "Rock Stars", "Teacher/Student", "M/M/M", "Armpit Kink", "Con Artists", "Disassociation",
-        "Underwear Kink", "Natural Disasters", "Bus", "Platonic Love", "Regeneration", "Descent into Madness",
-        "Bathing", "Emo", "Nursing", "Strip Poker", "Strip Poker", "Body Hair", "Locked In", "Mad Scientists",
-        "Sex Games", "Lazy Sex", "Rough Sex", "Alpha/Beta/Omega Dynamics", "Scent kink", "Awkward Boners", "Phone Sex",
-        "Sexting", "Breeding Kink", "Enemies to Lovers", "Boypussy", "Stomach Bulge", "Rimming", "Drunken Flirting",
-        "Mating Cycles/In Heat", "Loss of Innocence", "Voyeurism", "Dead Dove: Do Not Eat", "Dry Humping", "Neediness",
-        "Deal with the Devil", "Size Difference", "Size Kink"]
+      
+      const tags = ["Fluff", "Angst", "Smut", "Hurt/Comfort", "Romance", "Established Relationship", "Alternate Universe",
+      "One Shot", "Humor", "Cute", "Anal Sex", "Alternate Universe - Modern Setting", "Slow Burn", "Oral Sex",
+      "Friends to Lovers", "First Kiss", "Pining", "First Time", "Crossover", "Canon Compliant", "Kissing", "Short",
+      "Domestic Fluff", "Blow Jobs", "Light Angst", "Post-Canon", "Alternate Universe - College/University", "Family",
+      "PWP", "Explicit Sexual Content", "Violence", "Time Travel", "Masturbation", "Dirty Talk", "Sex", "Mpreg",
+      "Rough Sex", "Character Study", "Character Death", "Sweet", "Depression",
+      "Falling In Love", "Alternate Universe - High School", "NSFW", "Polyamory", "Christmas", "Rimming", "Soulmates",
+      "Porn", "Blood", "Sexual Content", "Magic", "Sad", "BDSM", "Jealousy", "Developing Relationship", "Vaginal Sex",
+      "Funny", "Dom/sub", "Minor Character Death", "Slice of Life", "Dubious Consent", "Misunderstandings",
+      "Spanking", "Future Fic", "Kidnapping", "Comfort", "Unrequited Love", "Nightmares", "Flirting", "Kid Fic",
+      "Pre-Canon", "Long", "Fix-It", "Pre-Slash", "Pre-Relationship", "Torture", "Teasing", "Suicidal Thoughts",
+      "Explicit Language", "Alcohol", "Anxiety", "Crying", "Bondage", "Action/Adventure",
+      "Alternate Universe - Fantasy", "Heavy Angst", "Daddy Kink", "Modern AU", "Friendship/Love", "Cunnilingus",
+      "First Meetings", "Slow Build", "Domestic", "Age Difference", "Porn With Plot", "Voyeurism", "Murder",
+      "Coming Out", "Incest", "Introspection", "Self-Harm", "Sex Toys", "Pregnancy", "Secret Relationship",
+      "Semi-Public Sex", "Drinking", "Christmas Fluff", "Gay", "Vampires", "Sharing a Bed", "Sibling Incest",
+      "Threesome - M/M/M", "Frottage", "Poetry", "Fake/Pretend Relationship", "Abuse", "Flashbacks",
+      "Marriage Proposal", "POV First Person", "Blood and Gore", "Biting", "Hurt", "Fantasy", "Horror",
+      "Multiple Orgasms", "Found Family", "Mystery", "Making Out", "Boys In Love", "Threesome", "Homophobia",
+      "Light Bondage", "Banter", "Reincarnation", "Possessive Behavior", "Drug Use", "Trauma", "Loss of Virginity",
+      "Past Relationship(s)", "Not Canon Compliant", "Bullying", "Confessions", "Friends With Benefits",
+      "Best Friends", "High School", "Unresolved Sexual Tension", "Exhibitionism", "Internalized Homophobia",
+      "Public Sex", "Cheating", "Past Abuse", "Arranged Marriage", "Humiliation", "Fluffy", "Aftercare",
+      "Threesome - F/M/M", "Crossdressing", "Choking", "Amnesia", "Dancing", "Alcohol Abuse/Alcoholism",
+      "Minor Violence", "Overstimulation", "War", "Recovery", "Trans Character", "Healing", "Memory Loss",
+      "Supernatural Elements", "Break Up", "Underage Drinking", "Femslash", "Werewolves", "Ghosts", "Chaptered",
+      "True Love", "Guilt", "Light BDSM", "Self-Esteem Issues", "Texting", "Barebacking", "Cuddling", "Reunions",
+      "Family Drama", "Demons", "Father-Son Relationship", "Tragedy", "Unhealthy Relationships",
+      "Recreational Drug Use", "College AU", "Pain", "Canon Universe", "Gore", "Weddings", "Memories", "POV Outsider",
+      "Alternate Universe - Vampire", "POV Alternating", "Shower Sex", "Sad Ending", "Begging", "Secrets",
+      "Manipulation", "Insecurity", "Smoking", "Size Kink", "Double Penetration", "Post-War", "Riding", "Nipple Play",
+      "Alternate Universe - Canon", "Bonding", "PTSD", "Alternate Universe - Historical", "Betrayal",
+      "Temporary Character Death", "Hopeful Ending", "Infidelity", "Adoption", "One-Sided Attraction", "Heartbreak",
+      "Underage Sex", "Drugs", "Fingering", "Holidays", "Roommates", "Bittersweet", "Mutual Masturbation",
+      "Unplanned Pregnancy", "Revenge", "Protectiveness", "Mind Control", "Awkwardness", "Music", "Arguing",
+      "Asexual Character", "Drunk Sex", "Headcanon", "Prostitution", "Worldbuilding", "Hair-pulling", "Dreams",
+      "Teacher-Student Relationship", "POV Third Person", "Unhealthy Coping Mechanisms", "Tattoos",
+      "Past Character Death", "Dragons", "Secret Identity", "Scars", "Vomiting", "Slavery", "Tentacles", "Politics",
+      "Lingerie", "First Love", "Brothers", "Non-Graphic Violence", "Blowjobs", "Alternate Universe - Magic",
+      "Genderswap", "Genderbending", "Fights", "Alternate Universe - Gender Changes", "Dysfunctional Family",
+      "Cuddles", "Minor Injuries", "Declarations Of Love", "Mild Gore", "Phone Sex", "Fingerfucking", "Love/Hate",
+      "Mental Instability", "Loneliness", "Lesbian Sex", "Witches", "Families of Choice", "Parenthood",
+      "Teen Romance", "Soul Bond", "Anal", "Children", "Science Fiction", "Love at First Sight", "Deepthroating",
+      "Non-Consensual Drug Use", "Blindfolds", "Collars", "Punishment", "Vignette", "Forbidden Love", "Winter",
+      "Babies", "Post-Break Up", "Femdom", "Fear", "Marking", "Unreliable Narrator", "Dating", "Accidental Voyeurism",
+      "Anger", "Cooking", "Breathplay", "Sexual Fantasy", "Siblings", "Alternate Universe - Hogwarts",
+      "Long-Distance Relationship", "Cannibalism", "Growing Up", "Therapy", "Coming of Age", "Stalking",
+      "High School AU", "Watersports", "Bathing/Washing", "Loss", "Car Sex", "Royalty", "Handcuffs", "Orgasm Denial",
+      "Father-Daughter Relationship", "Letters", "Anal Play", "Pegging", "Roleplay", "Trust Issues",
+      "Late Night Conversations", "Insomnia", "Butt Plugs", "Regret", "Guns", "Comfort/Angst", "Power Dynamics",
+      "Massage", "Hate Sex", "Switching", "Stockholm Syndrome", "Non-Linear Narrative", "Alternate Canon",
+      "Redemption", "Time Skips", "Historical", "Magical Realism", "Wall Sex", "Bisexuality", "Verbal Humiliation",
+      "Sex Pollen", "Forced Orgasm", "One Night Stands", "Nudity", "Outdoor Sex", "Rescue", "Restraints",
+      "Gay Male Character", "Rope Bondage", "Drug Addiction", "Gags", "Alternate Universe - Superheroes/Superpowers",
+      "Baking", "Party", "Gangbang", "Character Development", "Rain", "Angels", "New Year's Eve", "Holding Hands",
+      "Resolved Sexual Tension", "Knifeplay", "Caretaking", "Transformation", "Apocalypse", "Somnophilia",
+      "Seduction", "Self-Doubt", "Child Neglect", "Embarrassment", "Bromance", "Wings", "Office Sex", "Tears",
+      "Post-Apocalypse", "Possession", "Telepathy", "Reconciliation", "Awkward Conversations", "Murder Mystery",
+      "Mild Angst", "Mythical Beings & Creatures", "Dildos", "Facials", "Mistletoe", "Shapeshifting", "Sexual Abuse",
+      "Bickering", "Masochism", "Alternate Universe - Dark", "Bisexual Male Character", "Sadism", "Summer", "Zombies",
+      "Wedding", "Rape Recovery", "Morning Sex", "Bloodplay", "Time Loop", "Canon Related", "Twincest", "Blackmail",
+      "Edging", "Alternate Universe - Fairy Tale", "Engagement", "Bathroom Sex", "Prison", "School", "Some angst",
+      "Tickling", "Power Play", "Kink Negotiation", "Intercrural Sex", "Submission", "Romantic Friendship",
+      "Vacation", "Denial", "Clothed Sex", "Religion", "Age Play", "Brainwashing", "Angry Sex", "Morning After",
+      "Immortality", "Twins", "Pirates", "Animal Transformation", "Threesome - F/F/M", "Living Together", "Intimacy",
+      "Alternate Reality", "Master/Slave", "Awkward Sexual Situations", "Domestic Bliss", "Tentacle Sex", "Drowning",
+      "Camping", "Sexual Slavery", "Divorce", "World War II", "Orgasm Control", "Childbirth", "Identity Issues",
+      "Touching", "Miscarriage", "Unsafe Sex", "Chatting & Messaging", "Hockey", "handjobs", "Zombie Apocalypse",
+      "Enthusiastic Consent", "Afterlife", "Aphrodisiacs", "Resurrection", "Unhappy Ending", "Stargazing",
+      "Alternate Universe - Science Fiction", "Non-Explicit Sex", "One-Sided Relationship", "Plot What Plot",
+      "Whipping", "Verbal Abuse", "Illnesses", "Comeplay", "Rivalry", "Drunken Shenanigans", "Drug Abuse",
+      "Original Fiction", "Aftermath of Violence", "Poly", "Alternate Universe - Office", "Power Imbalance",
+      "Clubbing", "69 (Sex Position)", "Orgy", "Daddy Issues", "Insanity", "Truth or Dare", "Apologies",
+      "Alternate Universe - Space", "Movie Night", "Sleeping Together", "Reunion", "First Date", "Role Reversal",
+      "Pregnant Sex", "Wet Dream", "Fisting", "Face Slapping", "Mafia AU", "Sappy", "Bodyswap", "Get Together",
+      "Casual Sex", "Brother-Sister Relationships", "Medical Procedures", "Superheroes", "Ambiguous Relationships",
+      "Undercover", "Cock Rings", "Matchmaking", "Foreplay", "Asphyxiation", "Edgeplay", "Group Sex", "Light-Hearted",
+      "Serial Killers", "Sleep Deprivation", "Unprotected Sex", "Human Experimentation",
+      "Alternate Universe - Rock Band", "Forced Marriage", "No Dialogue", "Social Anxiety", "Young Love", "Dream Sex",
+      "Desk Sex", "Consent Issues", "Thriller", "Babysitting", "Oblivious", "Topping from the Bottom", "Reminiscing",
+      "Mental Illness", "Mistaken Identity", "Mind Games", "Making Up", "Piercings", "Military", "Coma",
+      "Diary/Journal", "Police", "Fake Marriage", "Fantasizing", "Baby", "Marijuana", "Cultural Differences",
+      "Origin Story", "Sparring", "Love Bites", "Codependency", "Longing", "Sensory Deprivation", "Licking",
+      "Bad Parenting", "Dom/sub Play", "5 Times", "Fuck Or Die", "Closeted Character", "Shopping", "Photography",
+      "Painplay", "Addiction", "Comfort Sex", "Dysfunctional Relationships", "Courtship", "Self-Sacrifice",
+      "Foot Fetish", "Porn Without Plot", "Alternate Universe - Angels & Demons", "Abandonment", "Public Humiliation",
+      "Blind Date", "Sex Work", "Sports", "Growing Up Together", "Voice Kink", "Drugged Sex", "Teen Pregnancy",
+      "Sacrifice", "Exhaustion", "Requited Love", "Hospital", "Cock Worship", "Object Insertion", "Detectives",
+      "Psychic Abilities", "Vampire AU", "Hotel Sex", "Wedding Night", "Public Display of Affection",
+      "Amputation", "Heartache", "Safewords", "Robots", "injuries", "Huddling For Warmth", "Showers", "Dystopia",
+      "Lactation Kink", "Stripping", "Competition", "Bad Decisions", "Snowed In", "Adultery", "Swimming", "Crime",
+      "Pet Play", "Beaches", "London", "Vampire Sex", "Mermaids", "Marriage of Convenience", "First Times",
+      "Fatherhood", "Cigarettes", "Disturbing Themes", "Sibling Rivalry", "Dirty Thoughts", "Threesome - F/F/F",
+      "Snowball Fight", "Field Trip", "Fake Relationship", "Forced Pregnancy", "Rejection", "Kitchen Sex",
+      "Creature Fic", "Exes", "Alternate Universe - Gangsters", "Sexual Harassment", "Hypnotism", "Drinking Games",
+      "Potions", "Manhandling", "Paranormal", "Explosions", "Mindfuck", "Rituals", "Couch Sex", "Possessive Sex",
+      "non-con", "Heaven", "5+1", "Villains", "Breakup", "Multiple Partners", "Road Trip", "Artificial Intelligence",
+      "Pillow Talk", "Muteness", "New Years", "Medical Kink", "Quarantine", "Interrogation", "Public Nudity",
+      "Moral Ambiguity", "Temperature Play", "Late at Night", "Felching", "Non-Consensual Spanking",
+      "Multiple Pairings", "Sleepy Sex", "Non-Consensual", "Grooming", "Crush", "Flogging",
+      "Alternate Universe - Regency", "Older Woman/Younger Man", "Mental Anguish", "Condoms", "Strip Tease",
+      "Band Fic", "Bath Sex", "Accidental Marriage", "Yearning", "Greek Mythology - ", "Master/Servant",
+      "Objectification", "Personal Growth", "Prophecy", "Fate", "Secret Admirer", "Sexual Experimentation",
+      "Gambling", "Cuckolding", "Picnics", "Food Sex", "Love Potion/Spell", "Cousin Incest", "Porn Battle",
+      "Hair Pulling", "Mommy Kink", "Bad BDSM Etiquette", "Necromancy", "Deception", "dub-con", "Forced Bonding",
+      "Intersex", "Orphans", "Espionage", "Heroes", "Parents", "Forced Prostitution", "Football", "Sexism",
+      "Self-cest", "Piano", "Fuckbuddies", "Chains", "Coercion", "Alternate Universe - Western", "Partnership",
+      "Leashes", "Roughness", "Kidnapped", "Strangers", "Motorcycles", "Non-Penetrative Sex", "Baseball",
+      "Love Triangle", "Friends to Enemies", "Tearjerker", "Sneaking Around", "Sister-Sister Relationship", "Fairies",
+      "Enemies", "Experimental Style", "Ass to Mouth", "Demon", "Desire", "Frustration", "Caning",
+      "Alternate Universe - Criminals", "True Love's Kiss", "Alternate Universe - Boarding School", "Curtain Fic",
+      "Open Ending", "Sharing Body Heat", "Marathon Sex", "Teaching", "Succubi & Incubi", "Victorian", "Rape Fantasy",
+      "Violent Sex", "Heist", "Porn Watching", "Alternate Universe - Shapeshifters", "Table Sex", "Hand Job",
+      "Homecoming", "Moral Dilemmas", "Boarding School", "Kneeling", "Hickeys", "World War I", "Lapdance", "Affairs",
+      "Fucking Machines", "Emotional Abuse", "Secret Marriage", "Premature Ejaculation", "Attempted Suicide",
+      "Dark Fantasy", "Molestation", "Abuse of Authority", "Sweat", "Clothing Kink", "Theatre", "Library",
+      "Spin the Bottle", "Gaming", "Napping", "Glory Hole", "One Night Stand", "Snowballing", "Skinny Dipping",
+      "Wrestling", "Theft", "Accidental Bonding", "Beach Sex", "Trains", "Drug Dealing", "Partner Betrayal",
+      "Traditions", "Stranded", "Anonymous Sex", "Undressing", "Psychic Bond", "Students", "Opposites Attract",
+      "Boys in Skirts", "Cock Tease", "Control", "Truth Serum", "Regency", "Breaking and Entering", "Yakuza",
+      "Bathtubs", "Pain Kink", "Delusions", "face fucking", "Ice Play", "Sexual Inexperience", "Age Swap", "Vikings",
+      "Boys Being Boys", "Workplace Sex", "Bottoming from the Top", "Alternate Universe - Restaurant",
+      "Eavesdropping", "Modeling", "Bedroom Sex", "Uniform Kink", "Dirty Dancing", "Virtual Reality", "Closet Sex",
+      "Knights", "Hypnosis", "Infertility", "Space Pirates", "Dress Up", "1980s", "1920s", "Prison Sex",
+      "Alternate Universe - Politics", "Sensation Play", "Spies", "Baby Fic", "Pheromones", "Hiking", "Gothic",
+      "Worship", "Unrequited Lust", "Obedience", "Acting", "Ownership", "Christianity", "1960s", "1970s", "Olympics",
+      "Summer Camp", "Library Sex", "Snuggling", "Yoga", "Wooing", "Harassment", "Lovers", "Sex Club",
+      "Play Fighting", "Alternate Universe - Small Town", "Locker Room", "Fondling", "Self-Loathing", "Legends",
+      "Prayer", "Revenge Sex", "1930s", "Priest Kink", "Watching Someone Sleep", "Nipple Torture", "Tarot",
+      "Tsunderes", "Humiliation kink", "Bitterness", "Medieval", "1950s", "Martial Arts", "Mind Reading",
+      "Domination", "Stalker", "Church Sex", "Bad Sex", "Fight Sex", "Sexual Confusion", "Sleepwalking", "Tattoos",
+      "Pool Sex", "Board Games", "Quiet Sex", "Candles", "Mile High Club", "Non-Sexual Kink", "Elevator Sex",
+      "Biblical References", "Object Penetration", "Nobility", "Power Outage", "Aliens Made Them Do It", "Porn Video",
+      "Phone Calls", "Cockblocking", "Obliviousness", "Priests", "Telepathic Sex", "Desert", "Street Racing",
+      "Goddesses", "Dare", "Facial", "Regency Romance", "Fear Play", "Plague", "Wounds", "Underworld", "Fame",
+      "Poker", "Surfing", "April Fools' Day", "Catholicism", "Service Submission", "Underwear", "Fever Dreams",
+      "Centaurs", "Sailing", "Classroom Sex", "Atlantis", "Cohabitation", "Judaism", "selective mutism", "Body Paint",
+      "body image issues", "Rock Stars", "Teacher/Student", "M/M/M", "Armpit Kink", "Con Artists", "Disassociation",
+      "Underwear Kink", "Natural Disasters", "Bus", "Platonic Love", "Regeneration", "Descent into Madness",
+      "Bathing", "Emo", "Nursing", "Strip Poker", "Strip Poker", "Body Hair", "Locked In", "Mad Scientists",
+      "Sex Games", "Lazy Sex", "Rough Sex", "Alpha/Beta/Omega Dynamics", "Scent kink", "Awkward Boners", "Phone Sex",
+      "Sexting", "Breeding Kink", "Enemies to Lovers", "Boypussy", "Stomach Bulge", "Rimming", "Drunken Flirting",
+      "Mating Cycles/In Heat", "Loss of Innocence", "Voyeurism", "Dead Dove: Do Not Eat", "Dry Humping", "Neediness",
+      "Deal with the Devil", "Size Difference", "Size Kink"]
 
 
-        function generate() {
-            var selectedNum = document.getElementById("num_tags")
-            var numTags = Number(selectedNum.value)
-            var span = document.querySelector("h3")
+      function generate() {
+          var selectedNum = document.getElementById("num_tags")
+          var numTags = Number(selectedNum.value)
+          var span = document.querySelector('.ao3-tag-style')
 
-            if (numTags < 0) {
-                span.innerText = "a negative number? fr?"
-            } else if (numTags > 50) {
-                span.innerText = "more than 50 is just excessive"
-            } else {
-                arr = getRandom(tags, numTags)
-                
-                span.innerText = arr.join(', ')
-            }
-        }
+          if (numTags < 0) {
+              span.innerText = "a negative number? fr?"
+          } else if (numTags == 0) {
+            span.innerText = "you get nothing!"
+          }  else if (numTags > 50) {
+              span.innerText = "more than 50 is just excessive"
+          } else {
+              arr = getRandom(tags, numTags)
+              
+              span.innerText = arr.join(', ')
+          }
+      }
 
-        //  function posted by Bergi on https://stackoverflow.com/questions/19269545/how-to-get-a-number-of-random-elements-from-an-array
-        function getRandom(arr, n) {
-            var result = new Array(n),
-                len = arr.length,
-                taken = new Array(len);
-            if (n > len)
-                throw new RangeError("getRandom: n cannot be greater than length of array.");
-            while (n--) {
-                var x = Math.floor(Math.random() * len);
-                result[n] = arr[x in taken ? taken[x] : x];
-                taken[x] = --len in taken ? taken[len] : len;
-            }
-            return result;
-        }
+      // kudos btn
+      function gratitude() {
+        let msgElement = document.querySelector('.user_liked')
+        msgElement.innerText = "You"
+      }
 
-        var input = document.getElementById("num_tags")
-        input.addEventListener("keypress", function(event) {
-            if (event.key === "Enter") {
-                document.getElementById("gen-btn").click();
-            }
-        })
-    </script>
-</body>
+      // share btn
+      function share() {
+        let url = 'https://taggenerator.netlify.app/'
+        navigator.clipboard.writeText(url.value)
+        alert("Copied " + url + "  to your clipboard! (Maybe...just select and copy the url above omg...)")
+      }
+
+      //  function posted by Bergi on https://stackoverflow.com/questions/19269545/how-to-get-a-number-of-random-elements-from-an-array
+      function getRandom(arr, n) {
+          var result = new Array(n),
+              len = arr.length,
+              taken = new Array(len);
+          if (n > len)
+              throw new RangeError("getRandom: n cannot be greater than length of array.");
+          while (n--) {
+              var x = Math.floor(Math.random() * len);
+              result[n] = arr[x in taken ? taken[x] : x];
+              taken[x] = --len in taken ? taken[len] : len;
+          }
+          return result;
+      }
+
+      var input = document.getElementById("num_tags")
+      input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+              document.getElementById("gen-btn").click();
+          }
+      })
+  </script>
+  </body>
 </html>

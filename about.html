@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="icon" type="image/png" href="reading-icon.png">
-    <link rel="stylesheet" href="light-theme.css">
-</head>
-<body>
-    <nav>
-        <div>
-            <label class="theme-switch theme-icon" for="checkbox">
-                <input type="checkbox" id="checkbox"/>
-                <div></div>
-          </label>
-        </div>
-    </nav>
-
+    <link rel="icon" type="image/png" href="reading-icon.png" />
+    <link rel="stylesheet" href="skin.css" />
+  </head>
+  <body>
     <article class="fancy">
-        <div>
-            <h2 class="about-title">About</h2>
-            <hr>
-        </div>
-        <p>The tags included were compiled from ao3's <a href="https://archiveofourown.org/admin_posts/18804" class="formatted-link" style="text-decoration:underline;"  target="_blank">official tag rankings</a> from 2021; I only included around 1000.</p>
-        <p>One thousand out of tens of thousands. If you think one of your favs isn't in the list, <a href="https://twitter.com/ursamono" class="formatted-link" style="text-decoration:underline;" target="_blank">dm it to me</a> and I'll add it if it's not.</p>
-        <p>My original intent here was for creative purposes, like a prompt generater. You have three random tags, how can you create a story out of them? But a lot of the tags are like, cum-eater! Nothing wrong with that, but do with it what you will.</p>
+      <div>
+        <h2 class="about-title">About</h2>
+        <hr class="about-line" />
+      </div>
+      <p>
+        The tags included were compiled from ao3's
+        <a
+          href="https://archiveofourown.org/admin_posts/18804"
+          class="formatted-link"
+          target="_blank"
+          >official tag rankings</a
+        >
+        from 2021; I only included around 1000.
+      </p>
+      <p>One thousand out of tens of thousands.</p>
+      <p>
+        My original intent here was for creative purposes, like a prompt
+        generater. You have three random tags, how can you create a story out of
+        them? But a lot of the tags are like, cum-eater! Nothing wrong with
+        that, but do with it what you will.
+      </p>
     </article>
 
     <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+      const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+      );
 
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); //add this
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light'); //add this
-            }    
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark"); //add this
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light"); //add this
         }
+      }
 
-        toggleSwitch.addEventListener('change', switchTheme, false);
+      toggleSwitch.addEventListener("change", switchTheme, false);
 
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+      const currentTheme = localStorage.getItem("theme")
+        ? localStorage.getItem("theme")
+        : null;
 
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
 
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
         }
+      }
     </script>
-</body>
+  </body>
 </html>
