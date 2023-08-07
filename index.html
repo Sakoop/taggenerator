@@ -28,68 +28,68 @@
         <h3 class="landmark heading">Site Navigation</h3>
         <ul class="primary navigation actions" role="navigation">
           <li class="dropdown">
-            <a href="">Fandoms</a>
+            <a >Fandoms</a>
             <ul class="menu" role="menu">
-              <li><a href="">All Fandoms</a></li>
+              <li><a >All Fandoms</a></li>
               <li id="medium_5">
-                <a href="">Anime &amp; Manga</a>
+                <a >Anime &amp; Manga</a>
               </li>
               <li id="medium_3">
-                <a href="">Books &amp; Literature</a>
+                <a >Books &amp; Literature</a>
               </li>
               <li id="medium_4">
-                <a href="">Cartoons &amp; Comics &amp; Graphic Novels</a>
+                <a >Cartoons &amp; Comics &amp; Graphic Novels</a>
               </li>
               <li id="medium_7">
-                <a href="">Celebrities &amp; Real People</a>
+                <a >Celebrities &amp; Real People</a>
               </li>
-              <li id="medium_2"><a href="">Movies</a></li>
+              <li id="medium_2"><a >Movies</a></li>
               <li id="medium_6">
-                <a href="">Music &amp; Bands</a>
+                <a >Music &amp; Bands</a>
               </li>
               <li id="medium_8">
-                <a href="">Other Media</a>
+                <a >Other Media</a>
               </li>
               <li id="medium_30198">
-                <a href="">Theater</a>
+                <a >Theater</a>
               </li>
               <li id="medium_1">
-                <a href="">TV Shows</a>
+                <a >TV Shows</a>
               </li>
               <li id="medium_476">
-                <a href="">Video Games</a>
+                <a >Video Games</a>
               </li>
               <li id="medium_9971">
-                <a href="">Uncategorized Fandoms</a>
+                <a >Uncategorized Fandoms</a>
               </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="">Browse</a>
+            <a >Browse</a>
             <ul class="menu" role="menu">
-              <li><a href="">Works</a></li>
-              <li><a href="">Bookmarks</a></li>
-              <li><a href="">Tags</a></li>
-              <li><a href="">Collections</a></li>
+              <li><a >Works</a></li>
+              <li><a >Bookmarks</a></li>
+              <li><a >Tags</a></li>
+              <li><a >Collections</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="">Search</a>
+            <a >Search</a>
             <ul class="menu" role="menu">
-              <li><a href="">Works</a></li>
-              <li><a href="">Bookmarks</a></li>
-              <li><a href="">Tags</a></li>
-              <li><a href="">People</a></li>
+              <li><a >Works</a></li>
+              <li><a >Bookmarks</a></li>
+              <li><a >Tags</a></li>
+              <li><a >People</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="">About</a>
+            <a >About</a>
             <ul class="menu" role="menu">
               <li><a href="about.html">About Us</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Wrangling Guidelines</a></li>
-              <li><a href="">Donate or Volunteer</a></li>
+              <li><a >News</a></li>
+              <li><a >FAQ</a></li>
+              <li><a >Wrangling Guidelines</a></li>
+              <li><a >Donate or Volunteer</a></li>
             </ul>
           </li>
           <li class="search">
@@ -140,18 +140,16 @@
           <div class="work">
             <p class="landmark"><a name="top">&nbsp;</a></p>
             <!-- BEGIN navigation -->
-            <h3 class="landmark heading">Actions</h3>
-            <ul class="work navigation actions" role="menu">
-              <li class="share">
+            <ul class="work navigation gen-actions" role="menu">
+              <li class="top-act1">
+                <input type="number" name="num_of_tags" id="num_tags" required="required" step="1" min="1" max="50" placeholder="Enter a Number">
+              </li>
+              <li class="top-act2">
+                <button onclick="generate()" id="gen-btn">Generate</button>
+              </li>
+              <li class="share top-act3">
                 <!-- ADD SOMETHING THAT GIVES LINK TO SHARE -->
-                <a
-                  class="share_proj"
-                  title="Share"
-                  aria-controls="#modal"
-                  href=""
-                  onclick="share()"
-                  >Share</a
-                >
+                <button onclick="share()" id="share-btn">Share</button>
               </li>
             </ul>
             <!-- END navigation -->
@@ -165,12 +163,12 @@
                 <dd class="rating tags">
                   <ul class="commas">
                     <li>
-                      <a class="tag" href="">(Possibly) Explicit</a>
+                      <a class="tag" >(Possibly) Explicit</a>
                     </li>
                   </ul>
                 </dd>
                 <dt class="warning tags">
-                  <a href="">Archive Warning</a>:
+                  <a >Archive Warning</a>:
                 </dt>
 
                 <dd class="warning tags">
@@ -178,7 +176,7 @@
                     <li>
                       <a
                         class="tag"
-                        href=""
+                        
                         >Creator Chose Not To Use Archive Warnings</a
                       >
                     </li>
@@ -188,7 +186,7 @@
 
                 <dd class="category tags">
                   <ul class="commas">
-                    <li><a class="tag" href="">Any</a></li>
+                    <li><a class="tag" >Any</a></li>
                   </ul>
                 </dd>
                 <dt class="fandom tags">Fandom:</dt>
@@ -196,7 +194,7 @@
                 <dd class="fandom tags">
                   <ul class="commas">
                     <li>
-                      <a class="tag" href=""
+                      <a class="tag" 
                         >Archive of Our Own</a
                       >
                     </li>
@@ -209,7 +207,7 @@
                     <li>
                       <a
                         class="tag"
-                        href=""
+                        
                         >You/Me</a
                       >
                     </li>
@@ -222,12 +220,12 @@
                     <li>
                       <a
                         class="tag"
-                        href=""
+                        
                         >Creator</a
                       >
                     </li>
                     <li>
-                      <a class="tag" href=""
+                      <a class="tag" 
                         >You</a
                       >
                     </li>
@@ -237,7 +235,7 @@
 
                 <dd class="freeform tags">
                   <ul class="commas">
-                    <li><a class="tag ao3-tag-style" href="" style = "font-weight:bold;">TAGS WILL SHOW HERE....</a></li>
+                    <li><a class="tag ao3-tag-style"  style = "font-weight:bold;">TAGS WILL SHOW HERE....</a></li>
                   </ul>
                 </dd>
 
@@ -252,10 +250,10 @@
                     <dt class="published">Published:</dt>
                     <dd class="published">2022-07-12</dd>
                     <dt class="status">Updated:</dt>
-                    <dd class="status">2023-08-05</dd>
+                    <dd class="status">2023-08-07</dd>
                     <dt class="words">Words:</dt>
                     <!-- put number of tags here??? -->
-                    <dd class="words">0</dd>
+                    <dd class="words">9</dd>
                     <dt class="chapters">Chapters:</dt>
                     <dd class="chapters">1/1</dd>
                     <dt class="kudos">Kudos:</dt>
@@ -292,18 +290,15 @@
 
                   <div class="chapter preface group">
                     <h3 class="title">
-                      <a href="">Get Generating!</a
+                      <a onclick="generate()">Get Generating!</a
                       >
                     </h3>
-
-                    <input type="number" name="num_of_tags" id="num_tags" required="required" step="1" min="1" max="50" placeholder="Enter a Number">
-                    <button onclick="generate()" id="gen-btn">Generate</button>
 
                     <!-- only display byline if different from the main byline -->
                   </div>
 
                   <!--main content-->
-                  <div class="userstuff module" role="article"></div>
+                  <div class="userstuff module" role="article">There's a wild story just waiting to be written.</div>
                   <!--/main-->
                 </div>
 
@@ -319,7 +314,8 @@
           <div id="feedback" class="feedback">
             <h3 class="landmark heading">Actions</h3>
 
-            <ul class="actions" role="navigation">
+            <ul class="actions bottom" role="navigation">
+              <!-- SADIE - in css add centering specific to this ul -->
               <li><a href="#main">&#8593; Top</a></li>
 
               <li>
@@ -339,7 +335,7 @@
             <h3 class="landmark heading">Kudos</h3>
             <div id="kudos">
               <p class="kudos">
-                <a href="" class="user_liked">Someone</a>
+                <a  class="user_liked">Someone</a>
                 left kudos on this project! (not really)
               </p>
             </div>
