@@ -3495,6 +3495,10 @@ dl#symbols-key dd {
 
 /* taggenerator proj specific  */
 
+div#main.chapters-show.region {
+  padding: 7px 16px 49px 16px;
+}
+
 ul.gen-actions {
   display: flex;
   flex-direction: row;
@@ -3509,7 +3513,7 @@ li.top-act1 {
   order: 1;
   margin-right: auto;
   padding: 0;
-  width: 70%;
+  width: 100%;
 }
 input#num_tags {
   display: block;
@@ -3529,6 +3533,7 @@ li.top-act2 {
   order: 2;
   width: fit-content;
   margin-left: auto;
+  margin: 0;
   padding: 0;
   cursor: pointer;
 }
@@ -3551,6 +3556,7 @@ li.top-act3 {
   order: 3;
   width: fit-content;
   margin-left: auto;
+  margin: 0;
   padding: 0;
   cursor: pointer;
 }
@@ -3627,11 +3633,20 @@ dl.work.meta.group dd.character.tags,
 dl.work.meta.group dd.freeform.tags,
 dl.work.meta.group dd.language,
 dl.work.meta.group dd.stats {
-  width: 50%;
-  padding-left: 16px;
+  width: fit-content;
+  padding: 2px 2px 2px 16px;
 }
 
 div.userstuff.module {
   text-align: center;
   margin: 36px 0 36px 0;
 }
+
+/* still a problem
+    on full screen on laptop, top buttons are spaced weirdly.
+    on phone, description still drops down
+      input overlaps buttons
+      ok, on drop down should still extend to right of screen
+      entire work desc box should be wider (go to edge of screen more)
+      in fact everything (summary, work) should take up more width of screen
+ */
