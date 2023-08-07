@@ -3495,34 +3495,79 @@ dl#symbols-key dd {
 
 /* taggenerator proj specific  */
 
+ul.gen-actions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  align-items: baseline;
+  gap: 8px;
+}
 /* enter a num button */
+li.top-act1 {
+  order: 1;
+  margin-right: auto;
+  padding: 0;
+  width: 70%;
+}
 input#num_tags {
   display: block;
-  margin: 10px auto;
-  padding: 12px;
-  width: 50%;
+  margin-right: auto;
+
   border: #aaa;
   box-shadow: none;
   cursor: pointer;
-  text-align: center;
-  font-size: larger;
+  text-align: left;
+  font-size: medium;
   background-color: white;
-  text-align: center;
   color: black;
 }
 
 /* generate button */
-button#gen-btn {
-  background: red;
-  display: block;
-  margin: 10px auto;
-  padding: 8px 16px;
+li.top-act2 {
+  order: 2;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0;
   cursor: pointer;
-  margin-top: 12px;
+}
+button#gen-btn {
+  display: block;
+  margin-left: auto;
+  padding: 2px 8px;
+  width: fit-content;
+  height: fit-content;
 
+  background: #900;
+  background-color: #900;
+  border: 1px solid #900;
+  color: white;
+  font-size: medium;
+}
+
+/* share btn */
+li.top-act3 {
+  order: 3;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+}
+li button#share-btn {
+  display: block;
+  margin-left: auto;
+  padding: 2px 8px;
+  width: fit-content;
+  height: fit-content;
+
+  /* background: #900;
   background-color: #900;
   border: 2px solid #900;
-  color: white;
+  color: white; */
+  background: #eee;
+  border: 1px solid #999;
+  color: #444;
   font-size: medium;
 }
 
@@ -3553,4 +3598,40 @@ a.formatted-link {
   text-decoration: none;
   font-size: large;
   color: black;
+}
+
+/* buttons at bottom */
+ul.actions.bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* kudos message */
+p.kudos {
+  margin: 0 auto;
+  padding: 2px;
+  text-align: center;
+}
+
+dl.work.meta.group dd.rating.tags,
+dl.work.meta.group dd.warning.tags,
+dl.work.meta.group dd.category.tags,
+dl.work.meta.group dd.fandom.tags,
+dl.work.meta.group dd.relationship.tags,
+dl.work.meta.group dd.character.tags,
+dl.work.meta.group dd.freeform.tags,
+dl.work.meta.group dd.language,
+dl.work.meta.group dd.stats {
+  width: 50%;
+  padding-left: 16px;
+}
+
+div.userstuff.module {
+  text-align: center;
+  margin: 36px 0 36px 0;
 }
