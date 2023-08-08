@@ -558,7 +558,8 @@ tbody tr th {
   border-bottom: 1px solid;
 }
 #header .primary {
-  background: #900 url(/images/skins/textures/tiles/red-ao3.png);
+  background: #900
+    url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
   padding: 0 0;
   width: 100%;
   box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35),
@@ -699,7 +700,8 @@ tbody tr th {
   margin-right: 325px;
 }
 #footer {
-  background: #900 url(/images/skins/textures/tiles/red-ao3.png);
+  background: #900
+    url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
   border-top: 2px solid;
   color: #fff;
   float: left;
@@ -743,8 +745,9 @@ tbody tr th {
   outline: 1px dotted;
 }
 #footer .module {
-  max-width: 20%;
-  padding: 0 2%;
+  padding: 2%;
+  text-align: center;
+  letter-spacing: 2px;
 }
 #footer .menu {
   margin: 0;
@@ -957,7 +960,8 @@ form li ul.autocomplete li.input {
 }
 .autocomplete .dropdown ul li:hover,
 .autocomplete .dropdown li.selected {
-  background: url(/images/skins/textures/tiles/red-ao3.png) top left #900;
+  background: url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png)
+    top left #900;
   color: #fff;
 }
 .required .autocomplete,
@@ -1751,7 +1755,7 @@ dl.index dd .userstuff p {
   display: block;
 }
 a.rss span {
-  background: url(/images/imageset.png) no-repeat -150px -275px;
+  background: url(https://archiveofourown.orghttps://archiveofourown.org/images/imageset.png) no-repeat -150px -275px;
   padding-left: 16px;
 }
 a.work {
@@ -1785,7 +1789,7 @@ span.series .position + .divider:after {
   content: "\25CF\0020";
 }
 p.kudos {
-  background: url(/images/imageset.png) no-repeat -110px -580px;
+  background: url(https://archiveofourown.org/images/imageset.png) no-repeat -110px -580px;
   padding: 0.5em 0.5em 0.5em 60px;
   margin: 2em 0;
   min-height: 50px;
@@ -2080,67 +2084,67 @@ li.blurb:after,
   background-repeat: no-repeat;
 }
 .required-tags .rating-general-audience {
-  background: url(/images/imageset.png) -50px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -50px -25px;
 }
 .required-tags .rating-explicit {
-  background: url(/images/imageset.png) -25px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -25px -25px;
 }
 .required-tags .rating-mature {
-  background: url(/images/imageset.png) -75px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -75px -25px;
 }
 .required-tags .rating-notrated,
 .required-tags .category-none,
 .required-tags .warning-no,
 .status .count {
-  background: url(/images/imageset.png) -150px 0;
+  background: url(https://archiveofourown.org/images/imageset.png) -150px 0;
 }
 .required-tags .rating-teen {
-  background: url(/images/imageset.png) 0 -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) 0 -25px;
 }
 .required-tags .category-femslash {
-  background: url(/images/imageset.png) -25px 0;
+  background: url(https://archiveofourown.org/images/imageset.png) -25px 0;
 }
 .required-tags .category-gen {
-  background: url(/images/imageset.png) -50px 0;
+  background: url(https://archiveofourown.org/images/imageset.png) -50px 0;
 }
 .required-tags .category-slash {
-  background: url(/images/imageset.png) 0 0;
+  background: url(https://archiveofourown.org/images/imageset.png) 0 0;
 }
 .required-tags .category-het {
-  background: url(/images/imageset.png) -75px 0;
+  background: url(https://archiveofourown.org/images/imageset.png) -75px 0;
 }
 .required-tags .category-multi {
-  background: url(/images/imageset.png) -100px -0;
+  background: url(https://archiveofourown.org/images/imageset.png) -100px -0;
 }
 .required-tags .category-other {
-  background: url(/images/imageset.png) -125px 0;
+  background: url(https://archiveofourown.org/images/imageset.png) -125px 0;
 }
 .required-tags .complete-no {
-  background: url(/images/imageset.png) -100px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -100px -25px;
 }
 .required-tags .complete-yes {
-  background: url(/images/imageset.png) -175px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -175px -25px;
 }
 .required-tags .warning-yes {
-  background: url(/images/imageset.png) -150px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -150px -25px;
 }
 .required-tags .warning-choosenotto {
-  background: url(/images/imageset.png) -125px -25px;
+  background: url(https://archiveofourown.org/images/imageset.png) -125px -25px;
 }
 .required-tags .external-work {
-  background: url(/images/imageset.png) -75px -50px;
+  background: url(https://archiveofourown.org/images/imageset.png) -75px -50px;
 }
 .status .private .text {
-  background: url(/images/imageset.png) -175px -50px;
+  background: url(https://archiveofourown.org/images/imageset.png) -175px -50px;
 }
 .status .public {
-  background: url(/images/imageset.png) -125px -50px;
+  background: url(https://archiveofourown.org/images/imageset.png) -125px -50px;
 }
 .status .hidden {
-  background: url(/images/imageset.png) -150px -50px;
+  background: url(https://archiveofourown.org/images/imageset.png) -150px -50px;
 }
 .status .rec {
-  background: url(/images/imageset.png) -100px -50px;
+  background: url(https://archiveofourown.org/images/imageset.png) -100px -50px;
 }
 .blurb .datetime {
   position: absolute;
@@ -2161,14 +2165,14 @@ li.blurb:after,
   border-bottom: 1px solid #ccc;
 }
 .index .skins .icon {
-  background: url(/images/imageset.png) 0 -580px;
+  background: url(https://archiveofourown.org/images/imageset.png) 0 -580px;
 }
 .index .mystery .icon {
-  background: url(/images/imageset.png) -110px -525px;
+  background: url(https://archiveofourown.org/images/imageset.png) -110px -525px;
 }
 .index .tag .icon,
 .index .tagset .icon {
-  background: url(/images/imageset.png) -55px -580px;
+  background: url(https://archiveofourown.org/images/imageset.png) -55px -580px;
 }
 .picture .icon img,
 .index .picture .icon {
@@ -2393,11 +2397,11 @@ li.comment {
   border-bottom: 5px solid #ddd;
 }
 .comment .icon .anonymous {
-  background: url(/images/imageset.png) no-repeat 0 -635px;
+  background: url(https://archiveofourown.org/images/imageset.png) no-repeat 0 -635px;
   display: block;
 }
 .comment .icon .visitor {
-  background: url(/images/imageset.png) no-repeat 0 -75px;
+  background: url(https://archiveofourown.org/images/imageset.png) no-repeat 0 -75px;
   display: block;
 }
 .comment h4.byline {
@@ -2443,10 +2447,10 @@ fieldset.comments,
   width: 75px;
 }
 .abbreviated .icon .anonymous {
-  background: url(/images/imageset.png) no-repeat 0 -450px;
+  background: url(https://archiveofourown.org/images/imageset.png) no-repeat 0 -450px;
 }
 .abbreviated .icon .visitor {
-  background: url(/images/imageset.png) no-repeat 0 -375px;
+  background: url(https://archiveofourown.org/images/imageset.png) no-repeat 0 -375px;
 }
 .abbreviated h4.byline {
   padding-left: 83px;
@@ -2771,14 +2775,14 @@ fieldset.comments,
   top: 0;
 }
 .skins .primary .icon {
-  background: url(/images/imageset.png) 0 -175px;
+  background: url(https://archiveofourown.org/images/imageset.png) 0 -175px;
 }
 .admin .primary .icon {
-  background: url(/images/imageset.png) 100px -75px;
+  background: url(https://archiveofourown.org/images/imageset.png) 100px -75px;
 }
 .tag .primary .icon,
 .tagset .primary .icon {
-  background: url(/images/imageset.png) 0 -275px;
+  background: url(https://archiveofourown.org/images/imageset.png) 0 -275px;
 }
 .wrangler .primary .icon {
   background: none;
@@ -3507,6 +3511,7 @@ ul.gen-actions {
   position: relative;
   align-items: baseline;
   gap: 8px;
+  overflow: hidden;
 }
 /* enter a num button */
 li.top-act1 {
@@ -3618,11 +3623,6 @@ ul.actions.bottom {
 }
 
 /* kudos message */
-p.kudos {
-  margin: 0 auto;
-  padding: 2px;
-  text-align: center;
-}
 
 dl.work.meta.group dd.rating.tags,
 dl.work.meta.group dd.warning.tags,
@@ -3638,15 +3638,7 @@ dl.work.meta.group dd.stats {
 }
 
 div.userstuff.module {
-  text-align: center;
+  text-align:justify;
   margin: 36px 0 36px 0;
 }
 
-/* still a problem
-    on full screen on laptop, top buttons are spaced weirdly.
-    on phone, description still drops down
-      input overlaps buttons
-      ok, on drop down should still extend to right of screen
-      entire work desc box should be wider (go to edge of screen more)
-      in fact everything (summary, work) should take up more width of screen
- */
